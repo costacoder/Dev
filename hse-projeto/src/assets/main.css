@@ -1,0 +1,13 @@
+/* Isso força todo o site a usar Poppins */
+* {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Opcional: Deixar os títulos um pouco mais imponentes */
+h1,
+h2,
+h3,
+.v-btn,
+.v-app-bar-title {
+  font-weight: 600;
+}
