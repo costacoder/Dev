@@ -2,7 +2,7 @@
   <v-footer class="bg-grey-darken-4 text-center d-flex flex-column pa-10">
     <div class="mb-5 d-flex justify-center">
       <v-img
-        src="/src/assets/logo-header.png"
+        src="@/assets/logo-header.png"
         alt="Logo HSE Climatização"
         contain
         class="logo-footer"
