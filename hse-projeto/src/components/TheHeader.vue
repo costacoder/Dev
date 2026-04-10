@@ -9,12 +9,7 @@
   >
     <v-container class="d-flex align-center pa-0 fill-height">
       <a href="#" class="d-flex align-center text-decoration-none ml-4 ml-md-0">
-        <v-img
-          src="@/assets/logo-hse-small.png"
-          alt="Logo HSE Climatização"
-          class="logo-img"
-          contain
-        />
+        <v-img src="/logo-hse-small.png" alt="Logo HSE Climatização" class="logo-img" contain />
       </a>
 
       <v-spacer />

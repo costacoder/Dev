@@ -1,12 +1,7 @@
 <template>
   <v-footer class="bg-grey-darken-4 text-center d-flex flex-column pa-10">
     <div class="mb-5 d-flex justify-center">
-      <v-img
-        src="@/assets/logo-header.png"
-        alt="Logo HSE Climatização"
-        contain
-        class="logo-footer"
-      ></v-img>
+      <v-img src="/logo-header.png" alt="Logo HSE Climatização" contain class="logo-footer"></v-img>
     </div>
 
     <div class="text-caption text-grey-lighten-1">Atendimento em: Ribeirão Preto e Região</div>
