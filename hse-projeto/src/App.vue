@@ -34,12 +34,7 @@ const menuItems = [
       </div>
 
       <div class="px-3 pb-5 d-flex justify-center">
-        <v-img
-          src="/src/assets/logo-hse-small.png"
-          alt="Logo HSE Climatização"
-          width="130"
-          contain
-        />
+        <v-img src="/src/assets/logo-hse-small.png" alt="Logo HSE" width="130" contain />
       </div>
 
       <v-divider class="mx-4"></v-divider>
