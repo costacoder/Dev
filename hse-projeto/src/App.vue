@@ -6,7 +6,6 @@ import TheFooter from '@/components/TheFooter.vue'
 
 const drawer = ref(false)
 
-// Dados centralizados para facilitar manutenção
 const telefone = '5516993741071'
 const mensagemWhatsPadrao = encodeURIComponent(
   'Olá! Vi o site de vocês e gostaria de solicitar um orçamento para limpeza de ar-condicionado.',
@@ -14,8 +13,12 @@ const mensagemWhatsPadrao = encodeURIComponent(
 
 const menuItems = [
   { title: 'Início', icon: 'mdi-home', to: '#' },
-  { title: 'Planos', icon: 'mdi-format-list-bulleted', to: '#planos' },
-  { title: 'Sobre', icon: 'mdi-account', to: '#profissional' },
+  { title: 'Serviços', icon: 'mdi-air-filter', to: '#servicos' },
+  { title: 'Benefícios', icon: 'mdi-help-circle-outline', to: '#porque-contratar' },
+  { title: 'Sobre a HSE', icon: 'mdi-shield-check', to: '#porque-hse' },
+  { title: 'Referências', icon: 'mdi-star-outline', to: '#referencias' },
+  { title: 'A Empresa', icon: 'mdi-office-building', to: '#sobre-empresa' },
+  { title: 'Equipe', icon: 'mdi-account-group', to: '#sobre-pessoas' },
 ]
 </script>
 
@@ -32,13 +35,10 @@ const menuItems = [
       <div class="d-flex justify-end pa-2">
         <v-btn icon="mdi-close" variant="text" color="primary" @click="drawer = false"></v-btn>
       </div>
-
       <div class="px-3 pb-5 d-flex justify-center">
         <v-img src="/src/assets/logo-hse-small.png" alt="Logo HSE" width="130" contain />
       </div>
-
       <v-divider class="mx-4"></v-divider>
-
       <v-list nav class="pa-4">
         <v-list-item
           v-for="item in menuItems"
@@ -50,7 +50,6 @@ const menuItems = [
           <template v-slot:prepend>
             <v-icon :icon="item.icon" color="primary" size="26"></v-icon>
           </template>
-
           <v-list-item-title class="text-primary font-weight-bold">
             {{ item.title }}
           </v-list-item-title>
@@ -83,7 +82,6 @@ const menuItems = [
 </template>
 
 <style>
-/* 1. ESTILIZAÇÃO DA GAVETA QUANDO ABERTA */
 .custom-drawer {
   height: auto !important;
   max-height: fit-content !important;
@@ -97,25 +95,19 @@ const menuItems = [
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
   visibility: visible !important;
 }
-
-/* 2. O SEGREDO PARA SUMIR 100% QUANDO FECHADA */
 .v-navigation-drawer--temporary:not(.v-navigation-drawer--active) {
   transform: translateX(130%) !important;
   display: none !important;
 }
-
 .v-navigation-drawer--active {
   display: block !important;
 }
-
 .custom-item {
   border-radius: 12px !important;
 }
-
 .z-index-top {
   z-index: 9999 !important;
 }
-
 html {
   scroll-behavior: smooth;
 }

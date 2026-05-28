@@ -11,15 +11,19 @@
       <a href="#" class="d-flex align-center text-decoration-none ml-4 ml-md-0">
         <v-img src="/logo-hse-small.png" alt="Logo HSE Climatização" class="logo-img" contain />
       </a>
-
       <v-spacer />
 
-      <div class="d-none d-md-flex align-center">
-        <v-btn variant="text" @click="scrollTo('planos')" class="font-weight-bold">Planos</v-btn>
-        <v-btn variant="text" @click="scrollTo('profissional')" class="font-weight-bold"
-          >Sobre</v-btn
+      <!-- Nav desktop -->
+      <div class="d-none d-lg-flex align-center">
+        <v-btn
+          v-for="item in menuItems"
+          :key="item.id"
+          variant="text"
+          class="font-weight-bold"
+          @click="scrollTo(item.id)"
         >
-
+          {{ item.title }}
+        </v-btn>
         <v-btn
           color="accent"
           prepend-icon="mdi-whatsapp"
@@ -33,9 +37,10 @@
         </v-btn>
       </div>
 
+      <!-- Botão hamburger mobile -->
       <v-btn
         icon="mdi-menu"
-        class="d-md-none mr-2"
+        class="d-lg-none mr-2"
         color="primary"
         @click="$emit('toggle-drawer')"
       />
@@ -44,13 +49,20 @@
 </template>
 
 <script setup>
-// Dados Centralizados para o WhatsApp
 const telefone = '5516993741071'
 const mensagemOrcamento = encodeURIComponent(
   'Olá! Vi o site de vocês e gostaria de solicitar um orçamento para manutenção de ar-condicionado.',
 )
 
-// Lógica original de scroll suave
+const menuItems = [
+  { title: 'Serviços', id: 'servicos' },
+  { title: 'Benefícios', id: 'porque-contratar' },
+  { title: 'Sobre a HSE', id: 'porque-hse' },
+  { title: 'Referências', id: 'referencias' },
+  { title: 'A Empresa', id: 'sobre-empresa' },
+  { title: 'Equipe', id: 'sobre-pessoas' },
+]
+
 const scrollTo = (id) => {
   const el = document.getElementById(id)
   if (el) {
@@ -70,7 +82,6 @@ const scrollTo = (id) => {
   margin: 0 auto;
   position: fixed !important;
   z-index: 1000;
-
   border-radius: 16px !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -78,7 +89,6 @@ const scrollTo = (id) => {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
   border: none !important;
 }
-
 /* 📱 MOBILE */
 @media (max-width: 599px) {
   .logo-img {
@@ -89,7 +99,6 @@ const scrollTo = (id) => {
     padding: 0 8px !important;
   }
 }
-
 /* TABLETS */
 @media (min-width: 600px) and (max-width: 1024px) {
   .v-container {
@@ -100,7 +109,6 @@ const scrollTo = (id) => {
     width: 150px;
   }
 }
-
 /* 💻 DESKTOP */
 @media (min-width: 1025px) {
   .v-container {
@@ -111,7 +119,6 @@ const scrollTo = (id) => {
     width: 180px;
   }
 }
-
 .logo-img {
   transition: width 0.3s ease;
   display: flex;
