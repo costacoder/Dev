@@ -44,7 +44,7 @@
 
   background:
     linear-gradient(135deg, rgba(26, 74, 124, 0.7), rgba(93, 158, 82, 0.6)),
-    url('../assets/background-hero-desktop.jpg');
+    url('../assets/background-hero.jpg');
 
   background-size: cover;
   background-position: center;
@@ -91,9 +91,6 @@
     /* No mobile, o recuo precisa ser maior para o título respirar */
     padding-top: 160px;
     text-align: left;
-    background:
-      linear-gradient(135deg, rgba(26, 74, 124, 0.72), rgba(93, 158, 82, 0.62)),
-      url('../assets/background-hero-mobile.jpg');
     background-position: center center;
   }
 

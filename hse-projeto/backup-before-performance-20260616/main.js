@@ -1,31 +1,14 @@
 import './assets/main.css'
 
 import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+
+// Adicionando as importações do Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
-import {
-  VApp,
-  VAppBar,
-  VAvatar,
-  VBtn,
-  VCard,
-  VChip,
-  VCol,
-  VContainer,
-  VDivider,
-  VFooter,
-  VIcon,
-  VImg,
-  VList,
-  VListItem,
-  VListItemTitle,
-  VMain,
-  VNavigationDrawer,
-  VRow,
-  VSpacer,
-} from 'vuetify/components'
+import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
-import '@mdi/font/css/materialdesignicons.css'
+import '@mdi/font/css/materialdesignicons.css' // Importante para os ícones funcionarem
 
 import App from './App.vue'
 import router from './router'
@@ -45,27 +28,7 @@ const hseTheme = {
 }
 
 const vuetify = createVuetify({
-  components: {
-    VApp,
-    VAppBar,
-    VAvatar,
-    VBtn,
-    VCard,
-    VChip,
-    VCol,
-    VContainer,
-    VDivider,
-    VFooter,
-    VIcon,
-    VImg,
-    VList,
-    VListItem,
-    VListItemTitle,
-    VMain,
-    VNavigationDrawer,
-    VRow,
-    VSpacer,
-  },
+  components,
   directives,
   theme: {
     defaultTheme: 'hseTheme',
@@ -77,7 +40,8 @@ const vuetify = createVuetify({
 
 const app = createApp(App)
 
+app.use(createPinia())
 app.use(router)
-app.use(vuetify)
+app.use(vuetify) // Dizendo ao Vue para usar o Vuetify
 
 app.mount('#app')
