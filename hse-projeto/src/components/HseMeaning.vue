@@ -14,8 +14,7 @@
         <h2 class="text-h4 font-weight-bold text-primary mb-3">Por que a HSE?</h2>
         <p class="text-body-2 text-grey-darken-1 mx-auto" style="max-width: 750px">
           Mais do que um nome, nossa marca carrega o compromisso global com as melhores práticas de
-          <strong class="text-primary">Health, Safety and Environment</strong> (Saúde, Segurança e
-          Meio Ambiente).
+          <strong class="text-primary">Higiene, Saúde e Eficiência</strong>
         </p>
       </v-col>
     </v-row>
@@ -71,14 +70,14 @@
 const sigla = [
   {
     caracter: 'H',
-    traducao: 'Health / Saúde',
+    traducao: 'Higiene',
     color: 'success',
     conceito:
       'Proteção biológica absoluta do ar contra vírus, fungos e colônias de bactérias nocivas.',
   },
   {
     caracter: 'S',
-    traducao: 'Safety / Segurança',
+    traducao: 'Saúde',
     color: 'primary',
     colorHex: '#0D47A1',
     conceito:
@@ -86,7 +85,7 @@ const sigla = [
   },
   {
     caracter: 'E',
-    traducao: 'Environment / Meio Ambiente',
+    traducao: 'Eficiência',
     color: 'accent',
     conceito:
       'Uso exclusivo de produtos biodegradáveis homologados e foco em eficiência energética.',
