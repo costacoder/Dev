@@ -75,9 +75,7 @@
           </div>
 
           <p class="text-body-2 text-grey-darken-2 mb-6" style="line-height: 1.7">
-            Estrutura técnica completa para atender grandes demandas com flexibilidade total de
-            horários (incluindo plantões noturnos ou aos finais de semana), evitando pausas no seu
-            faturamento.
+            Estrutura técnica completa para atender grandes demandas.
           </p>
 
           <v-divider class="mb-4 opacity-20"></v-divider>

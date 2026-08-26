@@ -9,7 +9,7 @@
 
           <p class="text-h6 mb-8 text-grey-lighten-2 font-weight-regular hero-description">
             Plano de manutenção para sua casa ou empresa.<br />
-            Saúde, economia e conformidade com a <strong>lei 13.589/2018</strong>.
+            Higiene, Saúde e Eficiência com a <strong>lei 13.589/2018</strong>.
           </p>
 
           <div class="d-flex flex-wrap gap-4 btn-wrapper">

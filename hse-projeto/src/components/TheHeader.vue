@@ -56,7 +56,7 @@ const mensagemOrcamento = encodeURIComponent(
 
 const menuItems = [
   { title: 'Benefícios', id: 'porque-contratar' },
-  { title: 'Sobre a HSE', id: 'porque-hse' },
+  //{ title: 'Sobre a HSE', id: 'porque-hse' },
   { title: 'Referências', id: 'referencias' },
   { title: 'A Empresa', id: 'sobre-empresa' },
 ]

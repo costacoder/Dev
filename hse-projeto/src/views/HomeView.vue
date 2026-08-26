@@ -3,8 +3,8 @@ import HeroSection from '@/components/HeroSection.vue'
 // 1. Porque contratar
 import WhyHire from '@/components/WhyHire.vue'
 
-// 2. Porque HSE
-import HseMeaning from '@/components/HseMeaning.vue'
+// 2. Porque HSE (desativado temporariamente)
+//import HseMeaning from '@/components/HseMeaning.vue'
 
 // 3. Referências
 import CompanyReferences from '@/components/CompanyReferences.vue'
@@ -22,7 +22,7 @@ import AboutCompany from '@/components/AboutCompany.vue'
     <WhyHire id="porque-contratar" />
 
     <!-- 2. Porque HSE -->
-    <HseMeaning id="porque-hse" />
+    <!-- <HseMeaning id="porque-hse" /> -->
 
     <!-- 3. Referências -->
     <CompanyReferences id="referencias" />
