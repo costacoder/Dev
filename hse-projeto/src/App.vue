@@ -71,7 +71,7 @@ const menuItems = [
       location="bottom right"
       class="ma-6 z-index-top"
       elevation="8"
-      :href="`https://wa.me/${telefone}?text=${mensagemWhatsPadrao}`"
+      :href="'https://wa.me/' + telefone + '?text=' + mensagemWhatsPadrao"
       target="_blank"
     >
       <v-icon size="35" color="white">mdi-whatsapp</v-icon>
